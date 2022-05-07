@@ -1,7 +1,11 @@
 package io.github.adyel.contextman.dto
 
 /**
- * @author adyel.ullahil
+ * @author adyel
  * @since 5/7/22
  */
-data class Message()
+//@JsonClass(generateAdapter = true)
+@kotlinx.serialization.Serializable
+data class Message(
+    val cards: List<Card>
+)

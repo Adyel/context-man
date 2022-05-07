@@ -1,7 +1,13 @@
 package io.github.adyel.contextman.dto
 
+import kotlinx.serialization.Serializable
+
 /**
- * @author adyel.ullahil
+ * @author adyel
  * @since 5/7/22
  */
-data class TextParagraph()
+
+@Serializable
+data class TextParagraph(
+    val text: String
+)

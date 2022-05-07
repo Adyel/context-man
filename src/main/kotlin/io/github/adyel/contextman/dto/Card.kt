@@ -1,10 +1,14 @@
 package io.github.adyel.contextman.dto
 
+import kotlinx.serialization.Serializable
+
 /**
- * @author adyel.ullahil
+ * @author adyel
  * @since 5/7/22
  */
-data class Cards(
+
+@Serializable
+data class Card(
     val header: Header,
-    val sections: Array<Section>
+    val sections: List<Section>
 )

@@ -1,7 +1,13 @@
 package io.github.adyel.contextman.dto
 
+import kotlinx.serialization.Serializable
+
 /**
- * @author adyel.ullahil
+ * @author adyel
  * @since 5/7/22
  */
-data class Section()
+
+@Serializable
+data class Section(
+    val widgets: List<Widget>
+)
