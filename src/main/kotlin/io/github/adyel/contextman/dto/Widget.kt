@@ -7,8 +7,9 @@ import kotlinx.serialization.Serializable
  * @since 5/7/22
  */
 
+@JvmRecord
 @Serializable
 data class Widget(
-    var textParagraph: TextParagraph? = null,
-    var keyValue: KeyValue? = null
+    val textParagraph: TextParagraph? = null,
+    val keyValue: KeyValue? = null
 )

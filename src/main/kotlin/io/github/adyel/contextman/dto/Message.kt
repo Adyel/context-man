@@ -1,11 +1,14 @@
 package io.github.adyel.contextman.dto
 
+import kotlinx.serialization.Serializable
+
 /**
  * @author adyel
  * @since 5/7/22
  */
 //@JsonClass(generateAdapter = true)
-@kotlinx.serialization.Serializable
+@JvmRecord
+@Serializable
 data class Message(
     val cards: List<Card>
 )

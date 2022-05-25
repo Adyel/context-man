@@ -7,6 +7,7 @@ import kotlinx.serialization.Serializable
  * @since 5/7/22
  */
 
+@JvmRecord
 @Serializable
 data class Header(
     val title: String,

@@ -42,7 +42,10 @@ dependencies {
 
 //    --
     implementation("com.squareup.moshi:moshi-kotlin:1.13.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
+    implementation("org.eclipse.jgit:org.eclipse.jgit:6.1.0.202203080745-r")
+    implementation("io.projectreactor:reactor-tools:3.3.0.M2")
+
 }
 
 tasks.withType<KotlinCompile> {

@@ -7,10 +7,11 @@ import kotlinx.serialization.Serializable
  * @since 5/7/22
  */
 
+@JvmRecord
 @Serializable
 data class KeyValue(
-    var topLabel: String,
-    var content: String,
-    var contentMultiline: Boolean,
-    var bottomLabel: String,
+    val topLabel: String,
+    val content: String,
+    val contentMultiline: Boolean,
+    val bottomLabel: String,
 )
